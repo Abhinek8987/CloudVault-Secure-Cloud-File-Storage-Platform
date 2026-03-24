@@ -1,0 +1,25 @@
+# Database files
+backend/data/
+backend/*.mv.db
+backend/*.trace.db
+backend/cloud_storage.mv.db
+
+# Uploaded files
+backend/uploads/
+
+# Build output
+backend/target/
+
+# Node modules
+frontend/node_modules/
+frontend/dist/
+
+# Logs
+backend/build.log
+backend/backend_error.log
+frontend/frontend_log.txt
+
+# IDE
+.idea/
+*.iml
+.vscode/

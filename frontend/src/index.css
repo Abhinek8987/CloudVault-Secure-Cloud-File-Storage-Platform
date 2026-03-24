@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .glass {
+    background-color: rgb(255 255 255 / 0.7);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgb(255 255 255 / 0.4);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+
+  .dark .glass {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+  }
+
+  .glass-card {
+    background-color: rgb(255 255 255 / 0.9);
+    backdrop-filter: blur(12px);
+    border: 1px solid #f3f4f6;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    border-radius: 1rem;
+  }
+
+  .dark .glass-card {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-glow:active {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.8), 0 0 0 4px rgba(99, 102, 241, 0.2);
+    transform: scale(0.96);
+  }
+
+  .auth-bg {
+    background-color: #f8fafc;
+    background-image:
+      radial-gradient(at 80% 0%, hsla(239, 100%, 88%, 0.6) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(258, 100%, 88%, 0.6) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, hsla(297, 100%, 88%, 0.6) 0px, transparent 50%),
+      radial-gradient(at 0% 0%, hsla(190, 100%, 88%, 0.6) 0px, transparent 50%);
+  }
+
+  .dark .auth-bg {
+    background: radial-gradient(ellipse at center, #ffffff 0%, #cbd5e1 40%, #64748b 100%);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+  color: #0f172a;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark,
+.dark body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #475569;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.dark input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
