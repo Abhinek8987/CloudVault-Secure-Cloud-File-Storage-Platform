@@ -82,27 +82,27 @@ Spring Boot API-->>React Frontend: File list response
 
 ---
 
-## 📸 Screenshots
+## 🖼️ UI Walkthrough
 
-### Authentication
-![Login Page](Screenshot/screenshot_1_login.png)
-![Register Page](Screenshot/screenshot_2_register.png)
-![OTP Verification](Screenshot/screenshot_3_otp_verification.png)
+### 🔑 Secure Authentication & Onboarding
+![Login Page](Screenshot/Auth_Login.png)
+![Register Page](Screenshot/Auth_Register.png)
+![Reset Password](Screenshot/Auth_Reset_Password.png)
 
-### User Dashboard
-![User Dashboard Overview](Screenshot/screenshot_4_user_dashboard.png)
-![File Upload](Screenshot/screenshot_5_file_upload.png)
-![My Files](Screenshot/screenshot_6_my_files.png)
+### 📁 User Workspace & File Management
+![My Files](Screenshot/User_My_Files.png)
+![File Upload](Screenshot/User_File_Upload.png)
+![Security Settings](Screenshot/User_Security_Settings.png)
 
-### Admin Portal
-![Admin Dashboard](Screenshot/screenshot_7_admin_dashboard.png)
-![Admin Analytics Charts](Screenshot/screenshot_8_admin_charts.png)
-![Admin User Directory](Screenshot/screenshot_9_admin_users.png)
+### 🛡️ Enterprise Administration
+![Admin Dashboard](Screenshot/Admin_Dashboard.png)
+![Admin Dashboard Dark](Screenshot/Admin_Dashboard_Dark.png)
+![Admin User Directory](Screenshot/Admin_User_Management.png)
 
-### Admin Deep Features
-![User Profile Telemetry](Screenshot/screenshot_10_user_profile_telemetry.png)
-![Admin Global Files](Screenshot/screenshot_11_admin_files.png)
-![Archived Users](Screenshot/screenshot_12_archived_users.png)
+### 🔍 Forensic Telemetry & Archival
+![Global File Index](Screenshot/Admin_Global_Files.png)
+![Archived Accounts](Screenshot/Admin_Archived_Users.png)
+![User Profile Intelligence](Screenshot/Admin_User_Profile.png)
 
 ---
 
